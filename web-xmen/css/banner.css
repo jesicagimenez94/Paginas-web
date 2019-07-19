@@ -1,0 +1,82 @@
+#banner {
+    margin-top: 50px;
+    position: relative;
+   /* animation: banner 10s infinite;*/
+
+}
+/*
+@keyframes banner{
+  0%, 30%{
+      background-image: url(img/xmen.jpg);
+      opacity: 1;
+  }
+  31%, 34%{
+      opacity: 0.4;
+  }
+  35%, 65%{
+      background-image: url(img/xmen8.jpg);
+  }
+  70%, 100%{
+      background-image: url(img/xmen9.jpg);
+  }
+}*/
+
+#banner img {
+    width: 100%; /* ancho*/
+    height: 100%;/* alto*/
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+
+#banner h2 {
+    font-size: 28px;
+}
+
+#banner a {
+     display:block;
+     width: 100px;
+     color: #fff;
+     text-decoration: none;
+     padding: 10px;
+     margin-top: 10px;
+     border: 3px solid #fff;
+}
+
+#banner a:hover {
+   background: rgba(51,51,51,0.5);
+}
+
+@media(min-width:480px){ /*a partir de 480px va tener las siguientes caracteristicas*/
+    #banner h2{
+        font-size: 40px;/* a partir de 480px las letras se aggrandan a 40px */
+    }
+
+    #banner a{
+        margin-top: 25px;/*a partir de 480px el margen superior cambia a 25px*/
+    }
+}
+
+@media(min-width:768px){ /*a partir de 768px va tener las siguientes caracteristicas*/
+    #banner {
+        height: 300px;/* a partir de 768px el banner va tener una altura de 300px */
+        overflow: hidden;
+    }
+    
+    #banner img {
+       height: auto;
+       margin-top: -100px;
+    }
+
+@media(min-width:1024px){ /*a partir de 1024px va tener las siguientes caracteristicas*/
+     
+        #banner img {
+           margin-top: -200px;
+        }
+    }
+    }

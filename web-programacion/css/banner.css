@@ -1,0 +1,115 @@
+#banner {
+    margin-top: 50px;
+    position: relative;
+    background-image: url(file:///C:/Users/ñhohldiiidiiiiiiiii/Desktop/web/web-programacion/img/program.jpg);
+    background-size: 200%;
+    animation: movimiento 10s  infinite alternate;
+}
+
+.contenedor-banner{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+
+}
+
+.contenedor-banner h3 {
+    font-size: 24px;
+}
+
+.contenedor-banner a {
+     display:block;
+     width: 100px;
+     color: white;
+     text-decoration: none;
+     padding: 10px;
+     margin-top: 10px;
+     border: 3px solid #fff;
+    text-align: center;
+     
+}
+
+.contenedor-banner a:hover {
+   color: rgba(51,51,51,0.5);
+   background: rgb(255, 255, 255);
+   
+}
+@keyframes movimiento{
+     from{
+       background-position: bottom left;
+     }to{
+       background-position: top right;
+     }
+
+}
+
+.capa-gradient{
+    width: 100%;
+    height: 800px;
+    background-size: 200%;
+    margin-top: 0px;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, rgb(252, 211, 77) );
+    opacity:0.6;
+}
+
+
+@media(min-width:440px){ /*a partir de 440px va tener las siguientes caracteristicas*/
+    #banner {
+        height: 220px;/* a partir de 440px el banner va tener una altura de 220px */
+        overflow: hidden;
+    }
+    #banner h2{
+        font-size: 40px;/* a partir de 440px las letras se aggrandan a 40px */
+    }
+
+    #banner a{
+        margin-top: 25px;/*a partir de 440px el margen superior cambia a 25px*/
+    }
+    .capa-gradient{
+        height: 220px;
+    }
+}
+
+@media(min-width:768px){ /*a partir de 768px va tener las siguientes caracteristicas*/
+    #banner {
+        height: 300px;/* a partir de 768px el banner va tener una altura de 300px */
+        overflow: hidden;
+    }
+    
+    #banner img {
+       height: auto;
+       margin-top: -100px;
+    }
+    .capa-gradient{
+        height: 300px;
+    }
+    .contenedor-banner{
+        position: absolute;
+        top: 50%;
+        left: 24%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #fff;
+    
+    }
+}
+
+@media(min-width:1024px){ /*a partir de 1024px va tener las siguientes caracteristicas*/
+      #banner img {
+           margin-top: -200px;
+        }
+        .contenedor-banner{
+            position: absolute;
+            top: 50%;
+            left: 26%;
+            transform: translateX(-50%) translateY(-50%);
+            color: #fff;
+        
+        }
+    
+    }
+    
+
+    
